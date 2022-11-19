@@ -9335,7 +9335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_439
+      name: model-zx_hit1
       rect:
         serializedVersion: 2
         x: 29
@@ -9356,12 +9356,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_440
+      name: model-zx_hit2
       rect:
         serializedVersion: 2
         x: 69
         y: 109
-        width: 82
+        width: 40
         height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -9377,7 +9377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_441
+      name: model-zx_hit4
       rect:
         serializedVersion: 2
         x: 151
@@ -9881,15 +9881,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_465
+      name: model-zx_bullet1
       rect:
         serializedVersion: 2
         x: 173
         y: 18
-        width: 30
+        width: 10
         height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -10615,6 +10615,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: model-zx_hit3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 109
+        width: 41
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cff6b105593bd48bb4299846720e43
+      internalID: 2018723032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: model-zx_bullet2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 18
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a5b208d2de6ce4eb79f7fdb0bfd2a9
+      internalID: 831675911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: model-zx_bullet3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 18
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0b0df7296a62b4195e7714abdc7cda
+      internalID: -1494502631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -10659,6 +10722,7 @@ TextureImporter:
       model-zx_442: 1141406390
       model-zx_122: -1428016202
       model-zx_226: -2029569419
+      model-zx_hit3: 2018723032
       model-zx_214: -2100566708
       model-zx_295: 1160404476
       model-zx_209: -1092218517
@@ -10691,6 +10755,7 @@ TextureImporter:
       model-zx_163: -1679096425
       model-zx_467: -2115060144
       model-zx_jump7: 1985512362
+      model-zx_bullet1: 1090755988
       model-zx_18: 223482727
       model-zx_192: -1977740244
       model-zx_81: 1248962908
@@ -10718,6 +10783,7 @@ TextureImporter:
       model-zx_486: -1784130410
       model-zx_62: 1381774734
       model-zx_108: -190822299
+      model-zx_hit1: 1413074454
       model-zx_158: -768873292
       model-zx_261: -12633469
       model-zx_483: -1144691745
@@ -10763,8 +10829,8 @@ TextureImporter:
       model-zx_280: -1679552779
       model-zx_run5: -1787157324
       model-zx_172: -739511759
+      model-zx_bullet3: -1494502631
       model-zx_303: 1291515925
-      model-zx_465: 713438629
       model-zx_87: 802094193
       model-zx_330: 189717301
       model-zx_343: 452135085
@@ -10789,11 +10855,11 @@ TextureImporter:
       model-zx_244: -1237811073
       model-zx_307: 254319208
       model-zx_421: -598353146
-      model-zx_439: -21532737
       model-zx_316: -748090094
       model-zx_362: -1013532032
       model-zx_403: 1393131618
       model-zx_468: 240458255
+      model-zx_bullet2: 831675911
       model-zx_20: -1681287860
       model-zx_idle2: 573181691
       model-zx_45: -1025724684
@@ -10832,6 +10898,7 @@ TextureImporter:
       model-zx_107: -248366589
       model-zx_74: 309949704
       model-zx_143: -676647111
+      model-zx_hit4: 1656558543
       model-zx_366: -1153762107
       model-zx_476: 228151137
       model-zx_runShoot11: -975787748
@@ -10841,6 +10908,7 @@ TextureImporter:
       model-zx_138: 1446238376
       model-zx_221: 1313939927
       model-zx_229: -66097244
+      model-zx_hit2: -1657115275
       model-zx_331: 1470398428
       model-zx_258: 967974470
       model-zx_185: 1981449362
@@ -10959,7 +11027,6 @@ TextureImporter:
       model-zx_131: -224686145
       model-zx_372: 1379121701
       model-zx_347: 38797090
-      model-zx_441: -383925404
       model-zx_167: -766554330
       model-zx_50: -321572380
       model-zx_52: 1544609623
@@ -11033,7 +11100,6 @@ TextureImporter:
       model-zx_246: 1485965789
       model-zx_240: -497628233
       model-zx_388: 1879438967
-      model-zx_440: -662563392
       model-zx_runShoot5: 2143660028
       model-zx_357: -2043787406
       model-zx_111: -848565603
