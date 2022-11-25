@@ -43,7 +43,9 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player Hit");
+            PlayerController player = other.gameObject.GetComponent<PlayerController>();
+            player.HitSide(transform.position.x > player.transform.position.x);
+            player.TakeDamage(this.contactDamage);
         }
     }
 

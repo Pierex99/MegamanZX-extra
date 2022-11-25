@@ -73,6 +73,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isTakingDamage)
+        {
+            animator.Play("model-zx_hit");
+            return;
+        }
+
         PlayerDirectionInput();
         PlayerJumpInput();
         PlayerShootInput();
@@ -220,4 +226,55 @@ public class PlayerController : MonoBehaviour
     {
         hitSideRight = rightSide;
     }
+
+    public void Invincible(bool invincibility)
+    {
+        isInvincible = invincibility;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            Mathf.Clamp(currentHealth, 0, maxHealth);
+            UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+            if (currentHealth <= 0)
+            {
+                Defeat();
+            }
+            else
+            {
+                StartDamageAnimation();
+            }
+        }
+    }
+
+    void StartDamageAnimation()
+    {
+        if (!isTakingDamage)
+        {
+            isTakingDamage = true;
+            isInvincible = true;
+            float hitForceX = 0.90f;
+            float hitForceY = 1.5F;
+            if (hitSideRight) hitForceX = -hitForceX;
+            rb2d.velocity = Vector2.zero;
+            rb2d.AddForce(new Vector2(hitForceX, hitForceY), ForceMode2D.Impulse);
+        }
+    }
+
+    void StopDamageAnimation()
+    {
+        isTakingDamage = false;
+        isInvincible = false;
+        animator.Play("model-zx_hit", -1, 0f);
+    }
+
+
+    void Defeat()
+    {
+        Destroy(gameObject);
+    }
+
 }
