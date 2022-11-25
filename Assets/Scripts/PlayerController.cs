@@ -21,10 +21,17 @@ public class PlayerController : MonoBehaviour
 
     bool isGrounded;
     bool isShooting;
+    bool isTakingDamage;
+    bool isInvincible;
     bool isFacingRight;
+
+    bool hitSideRight;
 
     float shootTime;
     bool keyShootRelease;
+
+    public int currentHealth;
+    public int maxHealth = 28;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +40,8 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
 
         isFacingRight = true;
+
+        currentHealth = maxHealth;
     }
 
     private void FixedUpdate()
@@ -205,5 +214,10 @@ public class PlayerController : MonoBehaviour
         bullet.GetComponent<BulletScript>().SetBulletSpeed(bulletSpeed);
         bullet.GetComponent<BulletScript>().SetBulletDirection((isFacingRight) ? Vector2.right : Vector2.left);
         bullet.GetComponent<BulletScript>().Shoot();
+    }
+
+    public void HitSide(bool rightSide)
+    {
+        hitSideRight = rightSide;
     }
 }
