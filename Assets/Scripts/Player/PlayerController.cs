@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Animator animator;
+    //referencias
+    Animator animator;//
     BoxCollider2D box2d;
     Rigidbody2D rb2d;
-    [SerializeField] float moveSpeed = 1.5f;
-    [SerializeField] float jumpSpeed = 3.7f;
 
+    //variables movimiento
+    [SerializeField] public float moveSpeed = 1.5f;
+    [SerializeField] public float jumpSpeed = 3.7f;
+
+    //variables ataque disparo
     [SerializeField] int bulletDamage = 1;
     [SerializeField] float bulletSpeed = 5f;
     [SerializeField] Transform bulletShootPos;
     [SerializeField] GameObject bulletPrefab;
 
+    AudioSource audio_S;
+    public AudioClip[] sound;
+
+    //ingreso de teclado
     float keyHorizontal;
     bool keyJump;
     bool keyShoot;
 
-    bool isGrounded;
-    bool isShooting;
+    //verificadores
+    public bool isGrounded;
+    public bool isShooting;
     bool isTakingDamage;
     bool isInvincible;
     bool isFacingRight;
@@ -28,24 +37,55 @@ public class PlayerController : MonoBehaviour
     bool hitSideRight;
 
     float shootTime;
-    bool keyShootRelease;
+    public bool keyShootRelease;
 
+    //vida
     public int currentHealth;
     public int maxHealth = 28;
-    // Start is called before the first frame update
+    
+    private FiniteStateMachine<PlayerController> mFsm;
+
+    // Estados (instancias)
+    public PlayerStateIdle idleState;
+    public PlayerStateJump jumpState;
+    public PlayerStateRun runState;
+    public PlayerStateHit hitState;
+    public PlayerStateShoot shootState;
+    public PlayerStateRunShoot runShootState;
+    public PlayerStateJumpShoot jumpShootState;
+
+    void Awake()
+    {
+        mFsm = new FiniteStateMachine<PlayerController>();
+        idleState = new PlayerStateIdle(this, mFsm);
+        jumpState = new PlayerStateJump(this, mFsm);
+        runState = new PlayerStateRun(this, mFsm);
+        hitState = new PlayerStateHit(this, mFsm);
+        shootState = new PlayerStateShoot(this, mFsm);
+        runShootState = new PlayerStateRunShoot(this, mFsm);
+        jumpShootState = new PlayerStateJumpShoot(this, mFsm);
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
         box2d = GetComponent<BoxCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
+        audio_S = GetComponent<AudioSource>();
 
         isFacingRight = true;
 
         currentHealth = maxHealth;
+
+        mFsm.Start(idleState);
     }
 
     private void FixedUpdate()
     {
+        //mFsm
+        mFsm.CurrentState.OnPhysicsUpdate();
+
+
         isGrounded = false;
         Color raycastColor;
         RaycastHit2D raycastHit;
@@ -73,34 +113,39 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //mFsm
+        mFsm.CurrentState.HandleInput();
+        mFsm.CurrentState.OnLogicUpdate();
+
+
         if (isTakingDamage)
         {
             animator.Play("model-zx_hit");
             return;
         }
 
-        PlayerDirectionInput();
-        PlayerJumpInput();
+        /* PlayerDirectionInput();
+        PlayerJumpInput(); */
         PlayerShootInput();
-        PlayerMovement();   
+        //PlayerMovement();
     }
 
-    void PlayerDirectionInput()
+    /* void PlayerDirectionInput()
     {
-        keyHorizontal = Input.GetAxisRaw("Horizontal");
-    }
+        keyHorizontal = Input.GetAxisRaw("Horizontal");//
+    } */
 
-    void PlayerJumpInput()
+    /* void PlayerJumpInput()
     {
-        keyJump = Input.GetKeyDown(KeyCode.Space);
-    }
+        keyJump = Input.GetKeyDown(KeyCode.Space);//
+    } */
 
     void PlayerShootInput()
     {
         float shootTimeLength;
         float keyShootReleaseTimeLength = 0;
 
-        keyShoot = Input.GetKey(KeyCode.X);
+        //keyShoot = Input.GetKey(KeyCode.X);//
 
         if (keyShoot && keyShootRelease)
         {
@@ -109,6 +154,8 @@ public class PlayerController : MonoBehaviour
             shootTime = Time.time;
             // Shoot Bullet
             Invoke("ShootBullet", 0.1f);
+            audio_S.clip = sound[3];
+            audio_S.Play();
         }
         if (!keyShoot && !keyShootRelease)
         {
@@ -125,9 +172,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void PlayerMovement()
+    /* void PlayerMovement()
     {
-        if (keyHorizontal < 0)
+        if (keyHorizontal < 0)//
         {
             if (isFacingRight)
             {
@@ -205,12 +252,12 @@ public class PlayerController : MonoBehaviour
                 animator.Play("model-zx_jump");
             }
         }
-    }
-    void Flip()
+    } */
+    /* void Flip()//
     {
         isFacingRight = !isFacingRight;
         transform.Rotate(0f, 180f, 0f);
-    }
+    } */
 
     void ShootBullet()
     {
@@ -246,6 +293,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 StartDamageAnimation();
+                audio_S.clip = sound[4];
+                audio_S.Play();
             }
         }
     }

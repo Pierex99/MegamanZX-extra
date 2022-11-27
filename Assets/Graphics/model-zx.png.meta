@@ -1250,7 +1250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_54
+      name: model-sword_1_1
       rect:
         serializedVersion: 2
         x: 270
@@ -1271,15 +1271,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_55
+      name: model-sword_1_2
       rect:
         serializedVersion: 2
         x: 303
         y: 1871
         width: 62
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,15 +1292,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_56
+      name: model-sword_1_3
       rect:
         serializedVersion: 2
         x: 365
         y: 1871
         width: 63
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1313,15 +1313,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_57
+      name: model-sword_1_4
       rect:
         serializedVersion: 2
         x: 428
         y: 1871
         width: 60
         height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.33, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1334,15 +1334,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_58
+      name: model-sword_1_5
       rect:
         serializedVersion: 2
         x: 489
         y: 1871
         width: 51
         height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1355,15 +1355,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_59
+      name: model-sword_1_6
       rect:
         serializedVersion: 2
         x: 541
-        y: 1871
+        y: 1870
         width: 34
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 41
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1376,15 +1376,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_60
+      name: model-sword_1_7
       rect:
         serializedVersion: 2
-        x: 575
-        y: 1871
+        x: 576
+        y: 1870
         width: 34
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 42
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1397,7 +1397,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_61
+      name: model-sword_1_8
       rect:
         serializedVersion: 2
         x: 610
@@ -1418,7 +1418,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_62
+      name: model-sword_1_9
       rect:
         serializedVersion: 2
         x: 643
@@ -1439,15 +1439,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_63
+      name: model-sword_2_3
       rect:
         serializedVersion: 2
         x: 285
         y: 1809
         width: 67
         height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1460,15 +1460,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_64
+      name: model-sword_2_4
       rect:
         serializedVersion: 2
         x: 353
         y: 1809
-        width: 66
+        width: 65
         height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1481,15 +1481,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_65
+      name: model-sword_2_5
       rect:
         serializedVersion: 2
         x: 419
         y: 1809
         width: 65
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1502,15 +1502,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_66
+      name: model-sword_2_6
       rect:
         serializedVersion: 2
         x: 485
         y: 1809
         width: 44
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1523,15 +1523,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_67
+      name: model-sword_2_7
       rect:
         serializedVersion: 2
         x: 529
         y: 1809
-        width: 46
+        width: 45
         height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1544,36 +1544,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_68
+      name: model-sword_2_8
       rect:
         serializedVersion: 2
-        x: 575
-        y: 1850
-        width: 4
-        height: 4
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f360f7cc0bf69b49892bc987faa3165
-      internalID: 1742095120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: model-zx_69
-      rect:
-        serializedVersion: 2
-        x: 579
+        x: 576
         y: 1809
         width: 44
         height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1586,7 +1565,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_70
+      name: model-sword_2_1
       rect:
         serializedVersion: 2
         x: 213
@@ -1607,7 +1586,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_71
+      name: model-sword_2_2
       rect:
         serializedVersion: 2
         x: 248
@@ -1628,7 +1607,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_72
+      name: model-sword_2_9
       rect:
         serializedVersion: 2
         x: 625
@@ -1649,7 +1628,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_73
+      name: model-sword_2_10
       rect:
         serializedVersion: 2
         x: 667
@@ -1670,7 +1649,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_74
+      name: model-sword_2_11
       rect:
         serializedVersion: 2
         x: 703
@@ -1691,15 +1670,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_75
+      name: model-sword_3_1
       rect:
         serializedVersion: 2
         x: 137
         y: 1737
         width: 45
         height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1712,15 +1691,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_76
+      name: model-sword_3_2
       rect:
         serializedVersion: 2
         x: 183
         y: 1737
         width: 42
         height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1733,15 +1712,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_77
+      name: model-sword_3_3
       rect:
         serializedVersion: 2
         x: 226
         y: 1737
         width: 46
         height: 44
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1754,15 +1733,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_78
+      name: model-sword_3_4
       rect:
         serializedVersion: 2
         x: 272
         y: 1737
         width: 46
         height: 45
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1775,15 +1754,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_79
+      name: model-sword_3_5
       rect:
         serializedVersion: 2
         x: 318
         y: 1737
-        width: 82
+        width: 81
         height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1796,15 +1775,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_80
+      name: model-sword_3_6
       rect:
         serializedVersion: 2
-        x: 401
+        x: 400
         y: 1737
         width: 81
-        height: 60
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 61
+      alignment: 9
+      pivot: {x: 0.42, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1817,15 +1796,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_81
+      name: model-sword_3_7
       rect:
         serializedVersion: 2
         x: 482
         y: 1737
         width: 66
         height: 61
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1838,15 +1817,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_82
+      name: model-sword_3_8
       rect:
         serializedVersion: 2
         x: 549
         y: 1737
         width: 67
         height: 46
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1859,13 +1838,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_83
+      name: model-sword_3_9
       rect:
         serializedVersion: 2
         x: 617
-        y: 1737
+        y: 1738
         width: 35
-        height: 49
+        height: 48
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1880,13 +1859,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_84
+      name: model-sword_3_10
       rect:
         serializedVersion: 2
         x: 653
-        y: 1737
-        width: 38
-        height: 49
+        y: 1739
+        width: 36
+        height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1901,15 +1880,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_85
+      name: model-sword_3_11
       rect:
         serializedVersion: 2
         x: 691
         y: 1740
         width: 36
         height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.48, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1922,7 +1901,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_86
+      name: model-sword_3_12
       rect:
         serializedVersion: 2
         x: 728
@@ -1943,7 +1922,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_87
+      name: model-sword_3_13
       rect:
         serializedVersion: 2
         x: 768
@@ -5495,7 +5474,7 @@ TextureImporter:
       name: model-zx_shoot1
       rect:
         serializedVersion: 2
-        x: 188
+        x: 189
         y: 970
         width: 44
         height: 40
@@ -10694,13 +10673,14 @@ TextureImporter:
       model-zx_420: -1159270816
       model-zx_377: 309475499
       model-zx_425: -22294410
-      model-zx_63: 1751245222
       model-zx_89: -2018545613
       model-zx_114: -1907601068
+      model-sword_1_3: -1604607379
       model-zx_runShoot9: -562707498
       model-zx_90: -1884718850
       model-zx_412: 606763708
       model-zx_473: -1940175800
+      model-sword_2_5: 1381774734
       model-zx_278: -1427971228
       model-zx_176: -797663315
       model-zx_205: -1049754462
@@ -10713,6 +10693,7 @@ TextureImporter:
       model-zx_96: 1408914507
       model-zx_211: -535462795
       model-zx_35: -1371466258
+      model-sword_3_3: 309949704
       model-zx_119: 229512078
       model-zx_jumpShoot1: -626076190
       model-zx_139: 426096340
@@ -10727,6 +10708,7 @@ TextureImporter:
       model-zx_295: 1160404476
       model-zx_209: -1092218517
       model-zx_369: -471365508
+      model-sword_3_8: -2066921273
       model-zx_453: 1688774552
       model-zx_290: -226928465
       model-zx_426: 1250990396
@@ -10736,12 +10718,14 @@ TextureImporter:
       model-zx_166: -627944203
       model-zx_98: -869414752
       model-zx_120: 774495501
+      model-sword_1_7: 280739156
       model-zx_413: -849612247
       model-zx_124: 2059851986
       model-zx_382: 406415392
       model-zx_451: 1682010366
       model-zx_222: -424260508
-      model-zx_79: -2066921273
+      model-sword_2_7: 774461689
+      model-sword_2_6: 1751245222
       model-zx_353: 1768986610
       model-zx_470: 1463439827
       model-zx_110: -1273978468
@@ -10751,16 +10735,18 @@ TextureImporter:
       model-zx_327: 1902137237
       model-zx_376: -267757259
       model-zx_287: 2068309011
+      model-sword_2_4: -372831100
       model-zx_238: 705108735
       model-zx_163: -1679096425
       model-zx_467: -2115060144
+      model-sword_2_8: -1552323681
+      model-sword_1_8: -1971620684
       model-zx_jump7: 1985512362
       model-zx_bullet1: 1090755988
       model-zx_18: 223482727
       model-zx_192: -1977740244
-      model-zx_81: 1248962908
-      model-zx_217: 104526895
       model-zx_395: -421593929
+      model-zx_217: 104526895
       model-zx_104: -986899018
       model-zx_396: -1368392089
       model-zx_409: -1752526727
@@ -10770,9 +10756,7 @@ TextureImporter:
       model-zx_322: -1940623075
       model-zx_runShoot8: -388356028
       model-zx_443: 431875441
-      model-zx_71: 2001516514
       model-zx_126: 299186036
-      model-zx_64: 774461689
       model-zx_436: 1413074454
       model-zx_180: 725957374
       model-zx_477: 501307266
@@ -10781,7 +10765,6 @@ TextureImporter:
       model-zx_437: -1657115275
       model-zx_344: 1531793762
       model-zx_486: -1784130410
-      model-zx_62: 1381774734
       model-zx_108: -190822299
       model-zx_hit1: 1413074454
       model-zx_158: -768873292
@@ -10790,16 +10773,16 @@ TextureImporter:
       model-zx_208: 57867376
       model-zx_186: 465437447
       model-zx_326: -1279550297
+      model-sword_2_10: -648733477
       model-zx_jump9: -2096390445
       model-zx_449: 1350867250
       model-zx_400: 680182821
       model-zx_175: -1988073964
       model-zx_213: 1259019899
       model-zx_41: 2078913886
-      model-zx_72: -1582556613
+      model-zx_348: -45371438
       model-zx_285: -1400365051
       model-zx_419: 1404461260
-      model-zx_348: -45371438
       model-zx_199: 2073522452
       model-zx_191: 1138107861
       model-zx_254: -657126896
@@ -10812,12 +10795,14 @@ TextureImporter:
       model-zx_idle7: -1596073567
       model-zx_488: 113446640
       model-zx_47: 736225877
+      model-sword_3_13: -2110930969
       model-zx_224: -1644457041
       model-zx_360: -471213018
       model-zx_230: 1274250056
       model-zx_319: -1445022625
       model-zx_401: 1004595798
       model-zx_132: -2137866402
+      model-sword_3_11: -1044044382
       model-zx_328: -606060715
       model-zx_idle4: -228750487
       model-zx_146: 5197430
@@ -10831,7 +10816,7 @@ TextureImporter:
       model-zx_172: -739511759
       model-zx_bullet3: -1494502631
       model-zx_303: 1291515925
-      model-zx_87: 802094193
+      model-sword_1_6: -534103166
       model-zx_330: 189717301
       model-zx_343: 452135085
       model-zx_136: 257716164
@@ -10841,8 +10826,8 @@ TextureImporter:
       model-zx_130: -1581515997
       model-zx_218: -793853179
       model-zx_179: -505110353
-      model-zx_206: -214120047
       model-zx_200: -255317125
+      model-zx_206: -214120047
       model-zx_340: -473327744
       model-zx_39: -189387533
       model-zx_263: -273871564
@@ -10863,14 +10848,12 @@ TextureImporter:
       model-zx_20: -1681287860
       model-zx_idle2: 573181691
       model-zx_45: -1025724684
-      model-zx_67: 862518446
       model-zx_190: -574601430
       model-zx_365: 1718856288
       model-zx_151: -315736506
       model-zx_259: -513699697
       model-zx_297: -2043069694
       model-zx_49: -1673963543
-      model-zx_66: -1552323681
       model-zx_306: 1394615379
       model-zx_runShoot10: -975787748
       model-zx_320: -471880836
@@ -10880,7 +10863,6 @@ TextureImporter:
       model-zx_391: 1469773595
       model-zx_367: -877460558
       model-zx_jump6: -355627462
-      model-zx_78: 438797121
       model-zx_161: -994073315
       model-zx_215: 1529845452
       model-zx_237: 260930025
@@ -10894,14 +10876,14 @@ TextureImporter:
       model-zx_148: -1671583898
       model-zx_43: -99449284
       model-zx_417: 1234908826
-      model-zx_83: 419620718
       model-zx_107: -248366589
-      model-zx_74: 309949704
+      model-sword_3_12: 419620718
       model-zx_143: -676647111
       model-zx_hit4: 1656558543
       model-zx_366: -1153762107
       model-zx_476: 228151137
       model-zx_runShoot11: -975787748
+      model-sword_3_6: -502442065
       model-zx_22: -974663136
       model-zx_idle5: -1188226789
       model-zx_197: 1788840063
@@ -10912,6 +10894,7 @@ TextureImporter:
       model-zx_331: 1470398428
       model-zx_258: 967974470
       model-zx_185: 1981449362
+      model-sword_1_4: -217996590
       model-zx_113: 2030863989
       model-zx_231: 659706486
       model-zx_472: -839870338
@@ -10926,7 +10909,6 @@ TextureImporter:
       model-zx_run2: -1126888460
       model-zx_129: -103118979
       model-zx_363: -637963494
-      model-zx_80: -488165808
       model-zx_429: -1300258093
       model-zx_19: -1107574556
       model-zx_283: -2055100330
@@ -10938,14 +10920,13 @@ TextureImporter:
       model-zx_430: -1745076380
       model-zx_323: -988303968
       model-zx_116: -1687482816
-      model-zx_77: -502442065
+      model-sword_1_1: 669041920
       model-zx_350: -1885055580
       model-zx_359: -1851657715
       model-zx_444: 2109142626
       model-zx_109: 132585107
       model-zx_48: -1815167011
       model-zx_42: -1748409728
-      model-zx_70: -648733477
       model-zx_432: 776722465
       model-zx_168: -1328484194
       model-zx_397: 294034599
@@ -10967,10 +10948,8 @@ TextureImporter:
       model-zx_313: -1518742658
       model-zx_361: 1441383606
       model-zx_318: -191012704
-      model-zx_61: -372831100
       model-zx_idle3: -1412602141
       model-zx_434: 781871217
-      model-zx_73: -900168238
       model-zx_239: 1333890823
       model-zx_128: -1707291865
       model-zx_383: 872041109
@@ -10984,58 +10963,57 @@ TextureImporter:
       model-zx_run10: 580805715
       model-zx_169: -2119933996
       model-zx_233: -483594554
-      model-zx_56: -534103166
       model-zx_21: -1132973213
       model-zx_282: 1662735977
       model-zx_387: 75310155
       model-zx_247: -1239978227
       model-zx_469: -931434322
       model-zx_184: -41508216
+      model-sword_3_10: 1248962908
       model-zx_304: -2012778130
       model-zx_92: 1354855307
       model-zx_53: -1604607379
-      model-zx_75: 719154965
-      model-zx_69: 1956555600
       model-zx_424: 1198953484
       model-zx_393: -1630447346
-      model-zx_85: 403393669
-      model-zx_236: 581976661
+      model-sword_1_2: 1544609623
       model-zx_103: -1846804052
+      model-zx_236: 581976661
       model-zx_154: -1421587785
       model-zx_run1: 394158684
       model-zx_142: 453828053
       model-zx_225: 133593804
+      model-sword_3_9: -488165808
       model-zx_255: -153341427
       model-zx_195: 1697363780
       model-zx_run8: 1817375691
       model-zx_310: 1397970344
-      model-zx_jump2: -2047249057
+      model-sword_3_5: 1292247387
       model-zx_445: 1256234029
       model-zx_241: -998353254
       model-zx_121: -1938407420
       model-zx_428: 822007738
       model-zx_181: -2034019538
       model-zx_runShoot6: -2001166714
+      model-zx_jump2: -2047249057
       model-zx_194: -1109400161
       model-zx_100: -698503860
       model-zx_133: -1444225152
-      model-zx_84: -2110930969
+      model-zx_352: -1001017899
       model-zx_40: 428547367
       model-zx_342: -1486076516
-      model-zx_352: -1001017899
       model-zx_479: 1555627865
       model-zx_131: -224686145
       model-zx_372: 1379121701
       model-zx_347: 38797090
+      model-sword_3_7: 438797121
       model-zx_167: -766554330
       model-zx_50: -321572380
       model-zx_52: 1544609623
-      model-zx_54: -217996590
-      model-zx_60: 2118206963
-      model-zx_135: 65927889
       model-zx_jump4: 61725248
+      model-zx_135: 65927889
       model-zx_227: -2009857247
       model-zx_379: 218859157
+      model-sword_1_5: -1800914086
       model-zx_run11: 632507665
       model-zx_334: -1809542909
       model-zx_371: 286390549
@@ -11044,21 +11022,20 @@ TextureImporter:
       model-zx_152: 753202326
       model-zx_335: -1986356018
       model-zx_201: -1450366697
-      model-zx_57: 280739156
       model-zx_405: 1565785514
-      model-zx_58: -1971620684
-      model-zx_216: 1378125692
       model-zx_run6: -1060063016
+      model-zx_216: 1378125692
       model-zx_105: 1194568469
-      model-zx_177: 1087503918
+      model-zx_433: -1451328378
       model-zx_115: 848598687
+      model-zx_177: 1087503918
       model-zx_46: -820093615
       model-zx_358: -1360917871
       model-zx_44: -332402994
-      model-zx_433: -1451328378
-      model-zx_427: 1052437919
       model-zx_idle9: -1623400954
+      model-zx_427: 1052437919
       model-zx_458: 334991504
+      model-sword_2_9: 1956555600
       model-zx_423: -895673824
       model-zx_162: -642801373
       model-zx_jump11: 1974832815
@@ -11066,13 +11043,13 @@ TextureImporter:
       model-zx_228: 440223706
       model-zx_134: 119949332
       model-zx_37: 1688536609
+      model-sword_2_3: 2118206963
       model-zx_373: 194277875
       model-zx_160: -1533469902
       model-zx_292: 814783603
       model-zx_487: -1982332553
       model-zx_jump1: -1912725949
       model-zx_462: 1090755988
-      model-zx_76: 1292247387
       model-zx_337: 1885475425
       model-zx_418: -597844307
       model-zx_137: 973932294
@@ -11080,8 +11057,10 @@ TextureImporter:
       model-zx_125: 1912522805
       model-zx_235: 1303314808
       model-zx_455: -242042714
+      model-sword_1_9: 731501836
       model-zx_482: 1142109015
       model-zx_264: -330337906
+      model-sword_3_4: 719154965
       model-zx_run7: -1107728819
       model-zx_461: 1843331367
       model-zx_485: -1456918247
@@ -11096,6 +11075,7 @@ TextureImporter:
       model-zx_308: -183882643
       model-zx_438: 1656558543
       model-zx_232: 12163721
+      model-sword_2_1: 862518446
       model-zx_24: -1912725949
       model-zx_246: 1485965789
       model-zx_240: -497628233
@@ -11103,12 +11083,12 @@ TextureImporter:
       model-zx_runShoot5: 2143660028
       model-zx_357: -2043787406
       model-zx_111: -848565603
-      model-zx_86: -1342775683
       model-zx_351: -658177321
       model-zx_150: 333132159
       model-zx_243: -717615862
       model-zx_248: 60639399
       model-zx_478: 635813389
+      model-sword_3_2: -900168238
       model-zx_341: -362309640
       model-zx_404: -1798179102
       model-zx_480: 996993148
@@ -11147,6 +11127,7 @@ TextureImporter:
       model-zx_475: -214062983
       model-zx_375: -996689698
       model-zx_run9: 1067480981
+      model-sword_2_2: 624303922
       model-zx_212: -1499120267
       model-zx_399: 265642648
       model-zx_249: -2072843911
@@ -11161,25 +11142,22 @@ TextureImporter:
       model-zx_88: 1159813384
       model-zx_279: -338999457
       model-zx_jump8: 356333383
-      model-zx_59: 731501836
       model-zx_196: 1287605491
       model-zx_91: 236669825
-      model-zx_55: -1800914086
       model-zx_runShoot2: 742002509
       model-zx_346: -1514563723
       model-zx_245: -798823798
       model-zx_408: 1800082303
       model-zx_127: -559484249
-      model-zx_65: 1742095120
       model-zx_253: 1470991390
       model-zx_idle6: -1188226789
       model-zx_jump13: -667210195
-      model-zx_82: -1044044382
       model-zx_349: -461753179
       model-zx_171: 1392902087
       model-zx_389: -369157515
       model-zx_250: 1636491440
       model-zx_252: -180142828
+      model-sword_3_1: -1582556613
       model-zx_idle1: 1332799807
       model-zx_jump10: 1974832815
       model-zx_386: 353903171
@@ -11190,6 +11168,7 @@ TextureImporter:
       model-zx_101: 1414763395
       model-zx_219: -2012324204
       model-zx_296: -1451267716
+      model-sword_2_11: 2001516514
       model-zx_411: -1918171275
       model-zx_idle8: 654273424
   spritePackingTag: 
