@@ -51,6 +51,28 @@ MonoBehaviour:
   bulletSpeed: 5
   bulletDirection: {x: 1, y: 0}
   destroyDelay: 2
+  collideWithTags:
+  - Enemy
+  bulletType: 0
+  bulletData:
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
+  - sprite: {fileID: 1090755988, guid: e01c99f6795ec8845ab9b8f5581cbfb7, type: 3}
+    radius: 0.035
+    scale: {x: 1, y: 1, z: 0}
 --- !u!212 &8306583213646844532
 SpriteRenderer:
   m_ObjectHideFlags: 0

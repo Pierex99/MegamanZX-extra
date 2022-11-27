@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //referencias
     Animator animator;
     BoxCollider2D box2d;
     Rigidbody2D rb2d;
+
+    //variables movimiento
     [SerializeField] float moveSpeed = 1.5f;
     [SerializeField] float jumpSpeed = 3.7f;
 
+    //variables ataque disparo
     [SerializeField] int bulletDamage = 1;
     [SerializeField] float bulletSpeed = 5f;
     [SerializeField] Transform bulletShootPos;
     [SerializeField] GameObject bulletPrefab;
 
+    AudioSource audio_S;
+    public AudioClip[] sound;
+
+    //ingreso de teclado
     float keyHorizontal;
     bool keyJump;
     bool keyShoot;
 
+    //verificadores
     bool isGrounded;
     bool isShooting;
     bool isTakingDamage;
@@ -38,6 +47,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         box2d = GetComponent<BoxCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
+        audio_S = GetComponent<AudioSource>();
 
         isFacingRight = true;
 
@@ -109,6 +119,8 @@ public class PlayerController : MonoBehaviour
             shootTime = Time.time;
             // Shoot Bullet
             Invoke("ShootBullet", 0.1f);
+            audio_S.clip = sound[0];
+            audio_S.Play();
         }
         if (!keyShoot && !keyShootRelease)
         {
@@ -246,6 +258,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 StartDamageAnimation();
+                audio_S.clip = sound[1];
+                audio_S.Play();
             }
         }
     }
