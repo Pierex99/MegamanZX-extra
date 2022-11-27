@@ -202,6 +202,8 @@ public class PlayerController : MonoBehaviour
             else
             {
                 animator.Play("model-zx_jump");
+                audio_S.clip = sound[2];
+                audio_S.Play();
             }
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
         }

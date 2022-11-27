@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1.5
-  jumpSpeed: 3.7
+  jumpSpeed: 4
   bulletDamage: 1
   bulletSpeed: 5
   bulletShootPos: {fileID: 641314851}
@@ -949,6 +949,7 @@ MonoBehaviour:
   sound:
   - {fileID: 8300000, guid: 18d2f178737577c4aa9bf73243d7ce55, type: 3}
   - {fileID: 8300000, guid: b332d70c59fe45c4186e25a5300d260f, type: 3}
+  - {fileID: 8300000, guid: 8d891e1f50b06bd44b7aef6e7c701534, type: 3}
   currentHealth: 0
   maxHealth: 28
 --- !u!82 &1159429609
