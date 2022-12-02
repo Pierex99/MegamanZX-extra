@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb2d;
     bool isInvincible;
-
+    public static bool isDying = false;
     RigidbodyConstraints2D rb2dConstraints;
     public bool freezeEnemy;
 
@@ -27,6 +27,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     public void Flip()
@@ -51,10 +52,21 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    void StartDestroyAnimation()
+    {
+        animator.SetTrigger("Die");
+        isDying = true;
+    }
+
+    void StopDestroyAnimation()
+    {
+        Destroy(gameObject);
+    }
 
     void Defeat()
     {
-        Destroy(gameObject);
+        StartDestroyAnimation();
+        //Destroy(gameObject);
     }
 
     public void FreezeEnemy(bool freeze)

@@ -31,7 +31,7 @@ public class MetallController : MonoBehaviour
     public float shootDelay = 0.25f;
     public float sleepDelay = 2f;
     public float viewDistance = 2f;
-    public int shootSequenceMax = 5;
+    public int shootSequenceMax = 3;
 
     public enum MetallState { Closed, Open };
     public MetallState metallState = MetallState.Closed;
@@ -74,7 +74,7 @@ public class MetallController : MonoBehaviour
         float playerDistance = Vector2.Distance(player.transform.position, transform.position);
 
         // do Metall ai logic if it's enabled
-        if (enableAI)
+        if (enableAI && !EnemyController.isDying)
         {
             // state machine
             switch (metallState)
@@ -227,5 +227,10 @@ public class MetallController : MonoBehaviour
     private void StopInvincibleAnimation()
     {
         enemyController.Invincible(false);
+    }
+
+    void StartClosedAnimation()
+    {
+        animator.Play("Metall_Closed");
     }
 }
