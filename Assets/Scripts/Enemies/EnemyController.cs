@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     public bool isDying = false;
     RigidbodyConstraints2D rb2dConstraints;
     public bool freezeEnemy;
+    public bool isLastEnemy;
 
 
     [Header("Enemy Settings")]    
@@ -47,6 +48,7 @@ public class EnemyController : MonoBehaviour
             Mathf.Clamp(currentHealth, 0, maxHealth);
             if (currentHealth <= 0)
             {
+                Over.contadorMuertes++;
                 Defeat();
             }
         }
@@ -61,12 +63,18 @@ public class EnemyController : MonoBehaviour
     void StopDestroyAnimation()
     {
         Destroy(gameObject);
+        //Debug.Log("muertes: "+Over.contadorMuertes);
+        if (isLastEnemy)
+        {
+            Over.showVictory();
+        }
     }
 
     void Defeat()
     {
         StartDestroyAnimation();
         //Destroy(gameObject);
+        
     }
 
     public void FreezeEnemy(bool freeze)
@@ -96,6 +104,7 @@ public class EnemyController : MonoBehaviour
             PlayerController player = other.gameObject.GetComponent<PlayerController>();
             player.HitSide(transform.position.x > player.transform.position.x);
             player.TakeDamage(this.contactDamage);
+            Debug.Log("HACIENDO DAÑO:"+this.contactDamage);
         }
     }
 

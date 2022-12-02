@@ -347,6 +347,7 @@ public class PlayerController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 Defeat();
+                Over.showGameOver();
             }
             else
             {
