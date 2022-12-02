@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float bulletSpeed = 5f;
     [SerializeField] Transform bulletShootPos;
     [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GameObject sword;
 
     AudioSource audio_S;
     public AudioClip[] sound;
@@ -26,10 +27,13 @@ public class PlayerController : MonoBehaviour
     float keyHorizontal;
     bool keyJump;
     bool keyShoot;
+    bool keySword;
 
     //verificadores
     bool isGrounded;
     bool isShooting;
+    bool isSwording;
+    bool isAttacking = false;
     bool isTakingDamage;
     bool isInvincible;
     bool isFacingRight;
@@ -38,6 +42,9 @@ public class PlayerController : MonoBehaviour
 
     float shootTime;
     bool keyShootRelease;
+    
+    float swordTime;
+    bool keySwordRelease;
 
     public int currentHealth;
     public int maxHealth = 28;
@@ -88,10 +95,13 @@ public class PlayerController : MonoBehaviour
             animator.Play("model-zx_hit");
             return;
         }
+        if (isShooting || isSwording) isAttacking = true;
+        else isAttacking = false;
 
         PlayerDirectionInput();
         PlayerJumpInput();
         PlayerShootInput();
+        PlayerSwordInput();
         PlayerMovement();   
     }
 
@@ -112,7 +122,7 @@ public class PlayerController : MonoBehaviour
 
         keyShoot = Input.GetKey(KeyCode.X);
 
-        if (keyShoot && keyShootRelease)
+        if (keyShoot && keyShootRelease && !isAttacking)
         {
             isShooting = true;
             keyShootRelease = false;
@@ -133,6 +143,40 @@ public class PlayerController : MonoBehaviour
             if (shootTimeLength >= 0.25f || keyShootReleaseTimeLength >= 0.15f)
             {
                 isShooting = false;
+            }
+        }
+    }
+
+    void PlayerSwordInput()
+    {
+        float swordTimeLength;
+        float keySwordReleaseTimeLength = 0;
+        keySword = Input.GetKey(KeyCode.Z);
+
+        if (keySword && keySwordRelease && !isAttacking)
+        {
+            isSwording = true;
+            keySwordRelease = false;
+            swordTime = Time.time;
+            // Ataque de espada
+            // que se active el game object "sword"
+            //Invoke("SwordAttack", 0.1f);
+            // que el circle collider busque trigger
+            audio_S.clip = sound[3];
+            audio_S.Play();
+        }
+        if (!keySword && !keySwordRelease)
+        {
+            keySwordReleaseTimeLength = Time.time - swordTime;
+            keySwordRelease = true;
+        }
+
+        if (isSwording)
+        {
+            swordTimeLength = Time.time - swordTime;
+            if (swordTimeLength >= 0.35f || keySwordReleaseTimeLength >= 0.15f)
+            {
+                isSwording = false;
             }
         }
     }
@@ -184,6 +228,10 @@ public class PlayerController : MonoBehaviour
                 if (isShooting)
                 {
                     animator.Play("model-zx_shoot");
+                }
+                else if (isSwording)
+                {
+                    animator.Play("model-zx_sword1");
                 }
                 else
                 {
@@ -285,6 +333,16 @@ public class PlayerController : MonoBehaviour
         isTakingDamage = false;
         isInvincible = false;
         animator.Play("model-zx_hit", -1, 0f);
+    }
+
+    
+    void StartSwordAnimation()
+    {
+        sword.SetActive(true);
+    }
+    void StopSwordAnimation()
+    {
+        sword.SetActive(false);
     }
 
 

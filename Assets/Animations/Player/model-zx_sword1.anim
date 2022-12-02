@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: model-zx_sword_1
+  m_Name: model-zx_sword1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -91,14 +91,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.05
-    functionName: 
+    functionName: StartSwordAnimation
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.26666668
-    functionName: 
+    functionName: StopSwordAnimation
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -583,7 +583,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.24500018}
@@ -771,6 +771,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1151380635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8306583213646844529, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.489
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306583213646844534, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
 --- !u!1 &1159429602
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,8 +887,8 @@ BoxCollider2D:
   m_Offset: {x: 0.01, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.31, y: 0}
-    oldSize: {x: 0.6301603, y: 0.43999997}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.3600916, y: 0.41}
     newSize: {x: 0.35008904, y: 0.38}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -947,10 +1004,12 @@ MonoBehaviour:
   bulletSpeed: 5
   bulletShootPos: {fileID: 641314851}
   bulletPrefab: {fileID: 8306583213646844529, guid: cdb0abf8cb7766541884c77bb52216b7, type: 3}
+  sword: {fileID: 1349167059}
   sound:
   - {fileID: 8300000, guid: 18d2f178737577c4aa9bf73243d7ce55, type: 3}
   - {fileID: 8300000, guid: b332d70c59fe45c4186e25a5300d260f, type: 3}
   - {fileID: 8300000, guid: 8d891e1f50b06bd44b7aef6e7c701534, type: 3}
+  - {fileID: 8300000, guid: 0877295171a77194293e5a819136617a, type: 3}
   currentHealth: 0
   maxHealth: 28
 --- !u!82 &1159429609
@@ -1150,13 +1209,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1349167060}
   - component: {fileID: 1349167061}
-  m_Layer: 7
+  - component: {fileID: 1349167062}
+  m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1349167060
 Transform:
   m_ObjectHideFlags: 0
@@ -1188,6 +1248,19 @@ CircleCollider2D:
   m_Offset: {x: -0.009016554, y: -0.38625702}
   serializedVersion: 2
   m_Radius: 0.12275982
+--- !u!114 &1349167062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349167059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bb2cd9a464107d49b165fc4b3c87a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &1509272310
 GameObject:
   m_ObjectHideFlags: 0

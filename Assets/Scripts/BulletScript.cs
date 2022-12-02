@@ -101,6 +101,7 @@ public class BulletScript : MonoBehaviour
             // check for collision with this tag
             if (other.gameObject.CompareTag(tag))
             {
+                Debug.Log(other.gameObject);
                 switch (tag)
                 {
                     case "Enemy":
