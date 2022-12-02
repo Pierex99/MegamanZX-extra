@@ -9,16 +9,29 @@ public class PlayerController : MonoBehaviour
     BoxCollider2D box2d;
     Rigidbody2D rb2d;
 
-    //variables movimiento
+    [Header("Velocidad")]
     [SerializeField] float moveSpeed = 1.5f;
     [SerializeField] float jumpSpeed = 3.7f;
 
-    //variables ataque disparo
+    [Header("Ataques")]
     [SerializeField] int bulletDamage = 1;
     [SerializeField] float bulletSpeed = 5f;
     [SerializeField] Transform bulletShootPos;
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] GameObject sword;
+
+    [Header("SaltoPared")]
+    [SerializeField] private Transform controladorPared;
+    [SerializeField] private Vector3 dimensionesCajaPared;
+    private bool enPared;
+    private bool deslizando;
+    [SerializeField] private float velocidadDeslizar;
+    [SerializeField] private LayerMask queEsSuelo;
+
+    [SerializeField] private float fuerzaSaltoParedX;
+    [SerializeField] private float fuerzaSaltoParedY;
+    [SerializeField] private float tiempoSaltoPared;
+    private bool saltandoDePared;
 
     AudioSource audio_S;
     public AudioClip[] sound;
@@ -42,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     float shootTime;
     bool keyShootRelease;
-    
+
     float swordTime;
     bool keySwordRelease;
 
@@ -85,6 +98,11 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(box_origin - new Vector3(box2d.bounds.extents.x, 0), Vector2.down * (box2d.bounds.extents.y / 4f + raycastDistance), raycastColor);
         Debug.DrawRay(box_origin - new Vector3(box2d.bounds.extents.x, box2d.bounds.extents.y / 4f + raycastDistance), Vector2.right * (box2d.bounds.extents.x * 2), raycastColor);
 
+        enPared = Physics2D.OverlapBox(controladorPared.position, dimensionesCajaPared, 0f, queEsSuelo);
+        if (deslizando)
+        {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, Mathf.Clamp(rb2d.velocity.y, -velocidadDeslizar, float.MaxValue));
+        }
 
     }
     // Update is called once per frame
@@ -98,11 +116,14 @@ public class PlayerController : MonoBehaviour
         if (isShooting || isSwording) isAttacking = true;
         else isAttacking = false;
 
+        if (!isGrounded && enPared && keyHorizontal != 0) deslizando = true;
+        else deslizando = false;
+
         PlayerDirectionInput();
         PlayerJumpInput();
         PlayerShootInput();
         PlayerSwordInput();
-        PlayerMovement();   
+        PlayerMovement();
     }
 
     void PlayerDirectionInput()
@@ -183,63 +204,67 @@ public class PlayerController : MonoBehaviour
 
     void PlayerMovement()
     {
-        if (keyHorizontal < 0)
+        if (!saltandoDePared)
         {
-            if (isFacingRight)
+            if (keyHorizontal < 0)
             {
-                Flip();
+                if (isFacingRight)
+                {
+                    Flip();
+                }
+                if (isGrounded)
+                {
+                    if (isShooting)
+                    {
+                        animator.Play("model-zx_runShoot");
+                    }
+                    else
+                    {
+                        animator.Play("model-zx_run");
+                    }
+                }
+                rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
             }
-            if (isGrounded)
+            else if (keyHorizontal > 0)
             {
-                if (isShooting)
+                if (!isFacingRight)
                 {
-                    animator.Play("model-zx_runShoot");
+                    Flip();
                 }
-                else
+                if (isGrounded)
                 {
-                    animator.Play("model-zx_run");
+                    if (isShooting)
+                    {
+                        animator.Play("model-zx_runShoot");
+                    }
+                    else
+                    {
+                        animator.Play("model-zx_run");
+                    }
                 }
+                rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
             }
-            rb2d.velocity = new Vector2(-moveSpeed, rb2d.velocity.y);
+            else
+            {
+                if (isGrounded)
+                {
+                    if (isShooting)
+                    {
+                        animator.Play("model-zx_shoot");
+                    }
+                    else if (isSwording)
+                    {
+                        animator.Play("model-zx_sword1");
+                    }
+                    else
+                    {
+                        animator.Play("model-zx_idle");
+                    }
+                }
+                rb2d.velocity = new Vector2(0f, rb2d.velocity.y);
+            }
         }
-        else if (keyHorizontal > 0)
-        {
-            if (!isFacingRight)
-            {
-                Flip();
-            }
-            if (isGrounded)
-            {
-                if (isShooting)
-                {
-                    animator.Play("model-zx_runShoot");
-                }
-                else
-                {
-                    animator.Play("model-zx_run");
-                }
-            }
-            rb2d.velocity = new Vector2(moveSpeed, rb2d.velocity.y);
-        }
-        else
-        {
-            if (isGrounded)
-            {
-                if (isShooting)
-                {
-                    animator.Play("model-zx_shoot");
-                }
-                else if (isSwording)
-                {
-                    animator.Play("model-zx_sword1");
-                }
-                else
-                {
-                    animator.Play("model-zx_idle");
-                }
-            }
-            rb2d.velocity = new Vector2(0f, rb2d.velocity.y);
-        }
+
 
         if (keyJump && isGrounded)
         {
@@ -262,11 +287,29 @@ public class PlayerController : MonoBehaviour
             {
                 animator.Play("model-zx_jumpShoot");
             }
+            else if (deslizando && !keyJump)
+            {
+                animator.Play("model-zx_slide");
+
+            }
+            else if (deslizando && keyJump)
+            {
+                Debug.Log("salto paredX: " + fuerzaSaltoParedX * -keyHorizontal);
+                rb2d.velocity = new Vector2(fuerzaSaltoParedX * -keyHorizontal, fuerzaSaltoParedY);
+                StartCoroutine(CambioSaltoPared());
+            }
             else
             {
                 animator.Play("model-zx_jump");
             }
         }
+    }
+
+    IEnumerator CambioSaltoPared()
+    {
+        saltandoDePared = true;
+        yield return new WaitForSeconds(tiempoSaltoPared);
+        saltandoDePared = false;
     }
     void Flip()
     {
@@ -335,7 +378,7 @@ public class PlayerController : MonoBehaviour
         animator.Play("model-zx_hit", -1, 0f);
     }
 
-    
+
     void StartSwordAnimation()
     {
         sword.SetActive(true);
@@ -351,4 +394,10 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(controladorPared.position, dimensionesCajaPared);
+    }
 }

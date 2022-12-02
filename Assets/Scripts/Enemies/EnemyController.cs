@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     Animator animator;
     Rigidbody2D rb2d;
     bool isInvincible;
-    public static bool isDying = false;
+    public bool isDying = false;
     RigidbodyConstraints2D rb2dConstraints;
     public bool freezeEnemy;
 

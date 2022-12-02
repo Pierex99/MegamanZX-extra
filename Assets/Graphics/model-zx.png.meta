@@ -830,7 +830,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_34
+      name: model-zx_slide1
       rect:
         serializedVersion: 2
         x: 180
@@ -851,7 +851,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_35
+      name: model-zx_slide2
       rect:
         serializedVersion: 2
         x: 213
@@ -872,7 +872,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_36
+      name: model-zx_slide3
       rect:
         serializedVersion: 2
         x: 247
@@ -893,7 +893,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_37
+      name: model-zx_slide4
       rect:
         serializedVersion: 2
         x: 280
@@ -914,7 +914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_38
+      name: model-zx_slide5
       rect:
         serializedVersion: 2
         x: 317
@@ -935,7 +935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_39
+      name: model-zx_slide6
       rect:
         serializedVersion: 2
         x: 349
@@ -956,12 +956,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_40
+      name: model-zx_slide7
       rect:
         serializedVersion: 2
         x: 380
         y: 1925
-        width: 34
+        width: 33
         height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -977,7 +977,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_41
+      name: model-zx_slide8
       rect:
         serializedVersion: 2
         x: 415
@@ -998,7 +998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: model-zx_42
+      name: model-zx_slide
       rect:
         serializedVersion: 2
         x: 447
@@ -10712,14 +10712,14 @@ TextureImporter:
       model-zx_390: -2144982623
       model-zx_96: 1408914507
       model-zx_211: -535462795
-      model-zx_35: -1371466258
       model-zx_119: 229512078
       model-zx_jumpShoot1: -626076190
+      model-zx_slide1: 222209382
       model-zx_139: 426096340
-      model-zx_456: 1810829857
       model-zx_394: 1155760751
-      model-zx_291: -845387552
       model-zx_sword1_8: -1971620684
+      model-zx_456: 1810829857
+      model-zx_291: -845387552
       model-zx_442: 1141406390
       model-zx_122: -1428016202
       model-zx_226: -2029569419
@@ -10797,11 +10797,10 @@ TextureImporter:
       model-zx_400: 680182821
       model-zx_175: -1988073964
       model-zx_213: 1259019899
-      model-zx_41: 2078913886
       model-zx_72: -1582556613
+      model-zx_348: -45371438
       model-zx_285: -1400365051
       model-zx_419: 1404461260
-      model-zx_348: -45371438
       model-zx_199: 2073522452
       model-zx_191: 1138107861
       model-zx_254: -657126896
@@ -10846,17 +10845,16 @@ TextureImporter:
       model-zx_206: -214120047
       model-zx_200: -255317125
       model-zx_340: -473327744
-      model-zx_39: -189387533
-      model-zx_263: -273871564
       model-zx_189: 1246613367
+      model-zx_263: -273871564
+      model-zx_slide7: 308155012
       model-zx_288: -556320551
       model-zx_315: -2090911490
       model-zx_464: 1178358439
       model-zx_149: 1897724332
-      model-zx_38: 308155012
       model-zx_244: -1237811073
-      model-zx_307: 254319208
       model-zx_421: -598353146
+      model-zx_307: 254319208
       model-zx_316: -748090094
       model-zx_362: -1013532032
       model-zx_403: 1393131618
@@ -10895,303 +10893,305 @@ TextureImporter:
       model-zx_141: -1816198077
       model-zx_317: 58225230
       model-zx_148: -1671583898
-      model-zx_43: -99449284
-      model-zx_417: 1234908826
-      model-zx_83: 419620718
-      model-zx_107: -248366589
-      model-zx_74: 309949704
-      model-zx_143: -676647111
-      model-zx_hit4: 1656558543
-      model-zx_366: -1153762107
-      model-zx_476: 228151137
-      model-zx_runShoot11: -975787748
-      model-zx_22: -974663136
-      model-zx_idle5: -1188226789
-      model-zx_197: 1788840063
-      model-zx_138: 1446238376
-      model-zx_221: 1313939927
-      model-zx_229: -66097244
-      model-zx_hit2: -1657115275
-      model-zx_331: 1470398428
-      model-zx_258: 967974470
-      model-zx_185: 1981449362
-      model-zx_113: 2030863989
-      model-zx_231: 659706486
-      model-zx_472: -839870338
-      model-zx_289: 2074845683
-      model-zx_shoot1: 1470991390
-      model-zx_17: -457100048
-      model-zx_99: 1347753165
-      model-zx_jump5: 2080326557
-      model-zx_364: 472129274
-      model-zx_34: 473367704
-      model-zx_284: 99136310
-      model-zx_run2: -1126888460
-      model-zx_129: -103118979
-      model-zx_363: -637963494
-      model-zx_80: -488165808
-      model-zx_429: -1300258093
-      model-zx_19: -1107574556
-      model-zx_283: -2055100330
-      model-zx_294: 1842030052
-      model-zx_265: 742002509
-      model-zx_447: 555227726
-      model-zx_187: 1183919466
-      model-zx_262: -231669538
-      model-zx_430: -1745076380
-      model-zx_323: -988303968
-      model-zx_116: -1687482816
-      model-zx_77: -502442065
-      model-zx_350: -1885055580
-      model-zx_359: -1851657715
-      model-zx_444: 2109142626
-      model-zx_109: 132585107
-      model-zx_48: -1815167011
-      model-zx_42: -1748409728
-      model-zx_70: -648733477
-      model-zx_432: 776722465
-      model-zx_168: -1328484194
-      model-zx_397: 294034599
-      model-zx_147: -2076625686
-      model-zx_324: -515032129
-      model-zx_123: -909856786
-      model-zx_156: 1025914752
-      model-zx_164: -861005466
-      model-zx_414: -439867931
-      model-zx_106: -2070352017
-      model-zx_183: 1430039795
-      model-zx_178: 1909904336
-      model-zx_173: -1515725419
-      model-zx_454: 855397645
-      model-zx_155: -59140832
-      model-zx_333: -1529800366
-      model-zx_374: 467722451
-      model-zx_402: -2138168114
-      model-zx_313: -1518742658
-      model-zx_361: 1441383606
-      model-zx_318: -191012704
-      model-zx_idle3: -1412602141
-      model-zx_434: 781871217
-      model-zx_73: -900168238
-      model-zx_239: 1333890823
-      model-zx_128: -1707291865
-      model-zx_383: 872041109
-      model-zx_jump12: 83496233
-      model-zx_257: -1467842634
-      model-zx_463: 495909902
-      model-zx_459: -602595587
-      model-zx_267: 2143660028
-      model-zx_23: 632507665
-      model-zx_298: -1976701095
-      model-zx_run10: 580805715
-      model-zx_169: -2119933996
-      model-zx_233: -483594554
-      model-zx_21: -1132973213
-      model-zx_282: 1662735977
-      model-zx_387: 75310155
-      model-zx_247: -1239978227
-      model-zx_469: -931434322
-      model-zx_184: -41508216
-      model-zx_304: -2012778130
-      model-zx_92: 1354855307
-      model-zx_53: -1604607379
-      model-zx_75: 719154965
-      model-zx_69: 1956555600
-      model-zx_424: 1198953484
-      model-zx_393: -1630447346
-      model-zx_85: 403393669
-      model-zx_236: 581976661
-      model-zx_103: -1846804052
-      model-zx_154: -1421587785
-      model-zx_run1: 394158684
-      model-zx_142: 453828053
-      model-zx_225: 133593804
-      model-zx_sword1_3: -1604607379
-      model-zx_255: -153341427
-      model-zx_195: 1697363780
-      model-zx_run8: 1817375691
-      model-zx_310: 1397970344
-      model-zx_jump2: -2047249057
-      model-zx_445: 1256234029
-      model-zx_241: -998353254
-      model-zx_121: -1938407420
-      model-zx_428: 822007738
-      model-zx_181: -2034019538
-      model-zx_194: -1109400161
-      model-zx_runShoot6: -2001166714
-      model-zx_100: -698503860
-      model-zx_131: -224686145
-      model-zx_133: -1444225152
-      model-zx_84: -2110930969
-      model-zx_40: 428547367
-      model-zx_342: -1486076516
-      model-zx_352: -1001017899
-      model-zx_479: 1555627865
-      model-zx_372: 1379121701
-      model-zx_347: 38797090
-      model-zx_167: -766554330
-      model-zx_50: -321572380
-      model-zx_52: 1544609623
-      model-zx_jump4: 61725248
-      model-zx_135: 65927889
-      model-zx_sword1_6: -534103166
-      model-zx_227: -2009857247
-      model-zx_379: 218859157
-      model-zx_run11: 632507665
-      model-zx_334: -1809542909
-      model-zx_371: 286390549
-      model-zx_220: -361052435
-      model-zx_170: 1265702027
-      model-zx_152: 753202326
-      model-zx_335: -1986356018
-      model-zx_201: -1450366697
-      model-zx_405: 1565785514
-      model-zx_run6: -1060063016
-      model-zx_216: 1378125692
-      model-zx_105: 1194568469
-      model-zx_177: 1087503918
-      model-zx_115: 848598687
-      model-zx_46: -820093615
-      model-zx_358: -1360917871
-      model-zx_44: -332402994
-      model-zx_433: -1451328378
-      model-zx_427: 1052437919
-      model-zx_idle9: -1623400954
-      model-zx_458: 334991504
-      model-zx_423: -895673824
-      model-zx_162: -642801373
-      model-zx_jump11: 1974832815
-      model-zx_runShoot7: 608245456
-      model-zx_228: 440223706
-      model-zx_134: 119949332
-      model-zx_37: 1688536609
-      model-zx_373: 194277875
-      model-zx_160: -1533469902
-      model-zx_292: 814783603
-      model-zx_487: -1982332553
-      model-zx_jump1: -1912725949
-      model-zx_462: 1090755988
-      model-zx_76: 1292247387
-      model-zx_337: 1885475425
-      model-zx_418: -597844307
-      model-zx_137: 973932294
-      model-zx_452: -1590879724
-      model-zx_125: 1912522805
-      model-zx_235: 1303314808
-      model-zx_455: -242042714
-      model-zx_482: 1142109015
-      model-zx_264: -330337906
-      model-zx_run7: -1107728819
-      model-zx_461: 1843331367
-      model-zx_485: -1456918247
-      model-zx_runShoot3: -1995477168
-      model-zx_286: -727576503
-      model-zx_157: 597853487
-      model-zx_117: -1306883238
-      model-zx_474: 1710503299
-      model-zx_94: 2096823943
-      model-zx_153: 386320191
-      model-zx_118: -202454013
-      model-zx_308: -183882643
-      model-zx_438: 1656558543
-      model-zx_232: 12163721
-      model-zx_24: -1912725949
-      model-zx_246: 1485965789
-      model-zx_240: -497628233
-      model-zx_388: 1879438967
-      model-zx_runShoot5: 2143660028
-      model-zx_357: -2043787406
-      model-zx_111: -848565603
-      model-zx_86: -1342775683
-      model-zx_351: -658177321
-      model-zx_150: 333132159
-      model-zx_243: -717615862
-      model-zx_248: 60639399
-      model-zx_478: 635813389
-      model-zx_341: -362309640
-      model-zx_404: -1798179102
-      model-zx_480: 996993148
-      model-zx_97: -1946548237
-      model-zx_112: -1491725868
-      model-zx_293: -1836278585
-      model-zx_457: -1831724872
-      model-zx_140: 631090794
-      model-zx_jump3: -1912725949
-      model-zx_36: -901830848
-      model-zx_266: -1632190666
-      model-zx_281: 1236695706
-      model-zx_339: 2097151895
-      model-zx_392: -1592961153
-      model-zx_338: 1581269934
-      model-zx_446: -773133536
-      model-zx_484: -1036994201
-      model-zx_406: -882296243
-      model-zx_368: 826273900
-      model-zx_204: -1934026986
-      model-zx_325: -608066718
-      model-zx_471: 427942924
-      model-zx_234: 2060523633
-      model-zx_144: -840872843
-      model-zx_165: -205475403
-      model-zx_381: -2052126623
-      model-zx_309: -356748227
-      model-zx_385: 1589486281
-      model-zx_188: 1134914173
-      model-zx_345: -1852567815
-      model-zx_198: 1374164030
-      model-zx_242: 343763770
-      model-zx_354: 1530121686
-      model-zx_51: 669041920
-      model-zx_431: -1684242555
-      model-zx_475: -214062983
-      model-zx_375: -996689698
-      model-zx_run9: 1067480981
-      model-zx_sword1_9: 731501836
-      model-zx_212: -1499120267
-      model-zx_399: 265642648
-      model-zx_249: -2072843911
-      model-zx_251: -1451179777
-      model-zx_174: 1479533157
-      model-zx_301: -1186150010
-      model-zx_260: -1550548026
-      model-zx_311: -1261646357
-      model-zx_run3: -423576040
-      model-zx_378: -1226880856
-      model-zx_448: -1704884183
-      model-zx_88: 1159813384
-      model-zx_279: -338999457
-      model-zx_jump8: 356333383
-      model-zx_196: 1287605491
-      model-zx_91: 236669825
-      model-zx_runShoot2: 742002509
-      model-zx_346: -1514563723
-      model-zx_245: -798823798
-      model-zx_408: 1800082303
-      model-zx_127: -559484249
-      model-zx_65: 1742095120
-      model-zx_253: 1470991390
-      model-zx_idle6: -1188226789
-      model-zx_jump13: -667210195
-      model-zx_82: -1044044382
-      model-zx_349: -461753179
-      model-zx_171: 1392902087
-      model-zx_sword1_4: -217996590
-      model-zx_389: -369157515
-      model-zx_250: 1636491440
-      model-zx_252: -180142828
-      model-zx_idle1: 1332799807
-      model-zx_sword1_7: 280739156
-      model-zx_jump10: 1974832815
-      model-zx_386: 353903171
-      model-zx_398: 1347210735
-      model-zx_207: 1695900361
-      model-zx_356: -275823344
-      model-zx_jump14: -971727568
-      model-zx_101: 1414763395
-      model-zx_219: -2012324204
-      model-zx_296: -1451267716
-      model-zx_411: -1918171275
-      model-zx_idle8: 654273424
+      model-zx_43: 1234908826
+      model-zx_417: 419620718
+      model-zx_83: -248366589
+      model-zx_107: 309949704
+      model-zx_74: -676647111
+      model-zx_143: 1656558543
+      model-zx_hit4: -1153762107
+      model-zx_366: 228151137
+      model-zx_476: -975787748
+      model-zx_runShoot11: -974663136
+      model-zx_22: -1188226789
+      model-zx_idle5: 1788840063
+      model-zx_197: 1446238376
+      model-zx_138: 1313939927
+      model-zx_221: -66097244
+      model-zx_229: -1657115275
+      model-zx_hit2: 1470398428
+      model-zx_331: 967974470
+      model-zx_258: 1981449362
+      model-zx_185: 2030863989
+      model-zx_slide5: -901830848
+      model-zx_113: 659706486
+      model-zx_231: -839870338
+      model-zx_472: 2074845683
+      model-zx_289: 1470991390
+      model-zx_shoot1: -457100048
+      model-zx_17: 1347753165
+      model-zx_slide3: 473367704
+      model-zx_99: 2080326557
+      model-zx_jump5: 472129274
+      model-zx_364: 99136310
+      model-zx_284: -1126888460
+      model-zx_run2: -103118979
+      model-zx_129: -637963494
+      model-zx_363: -488165808
+      model-zx_80: -1300258093
+      model-zx_429: -1107574556
+      model-zx_19: -2055100330
+      model-zx_283: 1842030052
+      model-zx_294: 742002509
+      model-zx_265: 555227726
+      model-zx_447: 1183919466
+      model-zx_187: -231669538
+      model-zx_262: -1745076380
+      model-zx_430: -988303968
+      model-zx_323: -1687482816
+      model-zx_116: -502442065
+      model-zx_77: -1885055580
+      model-zx_350: -1851657715
+      model-zx_359: 2109142626
+      model-zx_444: 132585107
+      model-zx_109: -1815167011
+      model-zx_48: -648733477
+      model-zx_70: 776722465
+      model-zx_432: -1328484194
+      model-zx_168: 294034599
+      model-zx_397: -2076625686
+      model-zx_147: -515032129
+      model-zx_324: -909856786
+      model-zx_123: 1025914752
+      model-zx_156: -861005466
+      model-zx_164: -439867931
+      model-zx_414: -2070352017
+      model-zx_106: 1430039795
+      model-zx_183: 1909904336
+      model-zx_178: -1515725419
+      model-zx_173: 855397645
+      model-zx_454: -59140832
+      model-zx_155: -1529800366
+      model-zx_333: 467722451
+      model-zx_374: -2138168114
+      model-zx_402: -1518742658
+      model-zx_313: 1441383606
+      model-zx_361: -191012704
+      model-zx_318: -1412602141
+      model-zx_idle3: 781871217
+      model-zx_434: -900168238
+      model-zx_73: 1333890823
+      model-zx_239: -1707291865
+      model-zx_128: 872041109
+      model-zx_383: 83496233
+      model-zx_jump12: -1467842634
+      model-zx_257: 495909902
+      model-zx_463: -602595587
+      model-zx_459: 2143660028
+      model-zx_267: 632507665
+      model-zx_23: -1976701095
+      model-zx_298: 580805715
+      model-zx_run10: -2119933996
+      model-zx_169: -483594554
+      model-zx_233: -1132973213
+      model-zx_21: 1662735977
+      model-zx_282: 75310155
+      model-zx_387: -1239978227
+      model-zx_247: -931434322
+      model-zx_469: -41508216
+      model-zx_184: -2012778130
+      model-zx_304: 1354855307
+      model-zx_92: -1604607379
+      model-zx_53: 719154965
+      model-zx_75: 1956555600
+      model-zx_69: 1198953484
+      model-zx_424: -1630447346
+      model-zx_393: 403393669
+      model-zx_slide4: -1371466258
+      model-zx_85: 581976661
+      model-zx_236: -1846804052
+      model-zx_103: -1421587785
+      model-zx_154: 394158684
+      model-zx_run1: 453828053
+      model-zx_142: 133593804
+      model-zx_225: -1604607379
+      model-zx_sword1_3: -153341427
+      model-zx_255: 1697363780
+      model-zx_195: 1817375691
+      model-zx_run8: 1397970344
+      model-zx_310: -2047249057
+      model-zx_jump2: 1256234029
+      model-zx_445: -998353254
+      model-zx_241: -1938407420
+      model-zx_121: 822007738
+      model-zx_428: -2034019538
+      model-zx_181: -1109400161
+      model-zx_194: -2001166714
+      model-zx_runShoot6: -698503860
+      model-zx_100: -224686145
+      model-zx_131: -1444225152
+      model-zx_133: -2110930969
+      model-zx_84: -1486076516
+      model-zx_479: 1379121701
+      model-zx_342: -1001017899
+      model-zx_352: 1555627865
+      model-zx_372: 38797090
+      model-zx_347: -766554330
+      model-zx_167: -321572380
+      model-zx_50: 1544609623
+      model-zx_52: 61725248
+      model-zx_jump4: 65927889
+      model-zx_135: -534103166
+      model-zx_sword1_6: -2009857247
+      model-zx_227: 218859157
+      model-zx_379: 632507665
+      model-zx_run11: -1809542909
+      model-zx_334: 286390549
+      model-zx_371: -361052435
+      model-zx_220: 1265702027
+      model-zx_170: 753202326
+      model-zx_152: -1986356018
+      model-zx_335: -1450366697
+      model-zx_201: 1565785514
+      model-zx_405: -1060063016
+      model-zx_run6: 1378125692
+      model-zx_216: 1194568469
+      model-zx_105: 1087503918
+      model-zx_177: 848598687
+      model-zx_115: -820093615
+      model-zx_46: -1360917871
+      model-zx_358: -332402994
+      model-zx_44: -1451328378
+      model-zx_433: 1052437919
+      model-zx_427: -1623400954
+      model-zx_slide6: 1688536609
+      model-zx_idle9: 334991504
+      model-zx_458: -895673824
+      model-zx_423: -642801373
+      model-zx_162: 1974832815
+      model-zx_jump11: 608245456
+      model-zx_runShoot7: 440223706
+      model-zx_228: 119949332
+      model-zx_134: 194277875
+      model-zx_373: -1533469902
+      model-zx_160: 814783603
+      model-zx_slide2: -94262152
+      model-zx_292: -1982332553
+      model-zx_487: -1912725949
+      model-zx_jump1: 1090755988
+      model-zx_462: 1292247387
+      model-zx_76: 1885475425
+      model-zx_337: -597844307
+      model-zx_418: 973932294
+      model-zx_137: -1590879724
+      model-zx_452: 1912522805
+      model-zx_125: 1303314808
+      model-zx_235: -242042714
+      model-zx_455: 1142109015
+      model-zx_482: -330337906
+      model-zx_264: -1107728819
+      model-zx_run7: 1843331367
+      model-zx_461: -1456918247
+      model-zx_485: -1995477168
+      model-zx_runShoot3: -727576503
+      model-zx_286: 597853487
+      model-zx_157: -1306883238
+      model-zx_117: 1710503299
+      model-zx_474: 2096823943
+      model-zx_94: 386320191
+      model-zx_153: -202454013
+      model-zx_118: -183882643
+      model-zx_308: 1656558543
+      model-zx_438: 12163721
+      model-zx_232: -1912725949
+      model-zx_slide: 428547367
+      model-zx_24: 1485965789
+      model-zx_246: -497628233
+      model-zx_240: 1879438967
+      model-zx_388: 2143660028
+      model-zx_runShoot5: -2043787406
+      model-zx_357: -848565603
+      model-zx_111: -1342775683
+      model-zx_86: -658177321
+      model-zx_351: 333132159
+      model-zx_150: -717615862
+      model-zx_243: 60639399
+      model-zx_248: 635813389
+      model-zx_478: -362309640
+      model-zx_341: -1798179102
+      model-zx_404: 996993148
+      model-zx_480: -1946548237
+      model-zx_97: -1491725868
+      model-zx_112: -1836278585
+      model-zx_293: -1831724872
+      model-zx_457: 631090794
+      model-zx_140: -1912725949
+      model-zx_jump3: -1632190666
+      model-zx_266: 1236695706
+      model-zx_281: 2097151895
+      model-zx_339: -1592961153
+      model-zx_392: 1581269934
+      model-zx_338: -773133536
+      model-zx_446: -1036994201
+      model-zx_484: -882296243
+      model-zx_406: 826273900
+      model-zx_368: -1934026986
+      model-zx_204: -608066718
+      model-zx_325: 427942924
+      model-zx_471: 2060523633
+      model-zx_234: -840872843
+      model-zx_144: -205475403
+      model-zx_165: -2052126623
+      model-zx_381: -356748227
+      model-zx_309: 1589486281
+      model-zx_385: 1134914173
+      model-zx_slide8: -189387533
+      model-zx_188: -1852567815
+      model-zx_345: 1374164030
+      model-zx_198: 343763770
+      model-zx_242: 1530121686
+      model-zx_354: 669041920
+      model-zx_51: -1684242555
+      model-zx_431: -214062983
+      model-zx_475: -996689698
+      model-zx_375: 1067480981
+      model-zx_run9: 731501836
+      model-zx_sword1_9: -1499120267
+      model-zx_212: 265642648
+      model-zx_399: -2072843911
+      model-zx_249: -1451179777
+      model-zx_251: 1479533157
+      model-zx_174: -1186150010
+      model-zx_301: -1550548026
+      model-zx_260: -1261646357
+      model-zx_311: -423576040
+      model-zx_run3: -1226880856
+      model-zx_378: -1704884183
+      model-zx_448: 1159813384
+      model-zx_88: -338999457
+      model-zx_279: 356333383
+      model-zx_jump8: 1287605491
+      model-zx_196: 236669825
+      model-zx_91: 742002509
+      model-zx_runShoot2: -1514563723
+      model-zx_346: -798823798
+      model-zx_245: 1800082303
+      model-zx_408: -559484249
+      model-zx_127: 1742095120
+      model-zx_65: 1470991390
+      model-zx_253: -1188226789
+      model-zx_idle6: -667210195
+      model-zx_jump13: -1044044382
+      model-zx_82: -461753179
+      model-zx_349: 1392902087
+      model-zx_171: -217996590
+      model-zx_sword1_4: -369157515
+      model-zx_389: 1636491440
+      model-zx_250: -180142828
+      model-zx_252: 1332799807
+      model-zx_idle1: 280739156
+      model-zx_sword1_7: 1974832815
+      model-zx_jump10: 353903171
+      model-zx_386: 1347210735
+      model-zx_398: 1695900361
+      model-zx_207: -275823344
+      model-zx_356: -971727568
+      model-zx_jump14: 1414763395
+      model-zx_101: -2012324204
+      model-zx_219: -1451267716
+      model-zx_296: -1918171275
+      model-zx_411: 654273424
+      model-zx_idle8: -23544009
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

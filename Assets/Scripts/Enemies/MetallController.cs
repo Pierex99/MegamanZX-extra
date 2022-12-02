@@ -74,7 +74,7 @@ public class MetallController : MonoBehaviour
         float playerDistance = Vector2.Distance(player.transform.position, transform.position);
 
         // do Metall ai logic if it's enabled
-        if (enableAI && !EnemyController.isDying)
+        if (enableAI && !enemyController.isDying)
         {
             // state machine
             switch (metallState)
